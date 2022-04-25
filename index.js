@@ -19,7 +19,9 @@ mongoose
 app.use("/api/pins", pinRoute);
 app.use("/api/users", userRoute);
 
-app.listen(8800, () => {
+const port = process.env.port || 8800;
+
+app.listen(port, () => {
   console.log("Backend server is running!");
   console.log("");
 });
