@@ -21,6 +21,10 @@ app.use("/api/users", userRoute);
 
 const port = process.env.PORT || 8800;
 
+app.get("/", (req, res) => {
+  res.send("hello there");
+});
+
 app.listen(port, () => {
   console.log("Backend server is running!");
   console.log("");
