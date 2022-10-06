@@ -31,6 +31,7 @@ const PinSchema = new mongoose.Schema(
     },
     local: {
       type: Boolean,
+     },
   },
   { timestamps: true }
 );
