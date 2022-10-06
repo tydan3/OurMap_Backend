@@ -45,7 +45,14 @@ router.post("/signin", async (req, res) => {
     }
 
     //send res
-    res.status(200).json({ _id: user._id, username: user.username });
+    res
+      .status(200)
+      .json({
+        _id: user._id,
+        username: user.username,
+        lat: user.lat,
+        long: user.long,
+      });
   } catch (err) {
     res.status(500).json();
   }

@@ -17,11 +17,9 @@ const UserSchema = new mongoose.Schema(
     },
     lat: {
       type: String,
-      required: true,
     },
     long: {
       type: String,
-      required: true,
     },
   },
   { timestamps: true }
